@@ -4,11 +4,11 @@ class FileManager():
 
     def WriteToFile(self, info):
         self.info = info
-        with open(r"C:\Users\saisa\Desktop\Coding\Course\Students\Commons\todolist.txt", "a") as file:
+        with open(r"PATH\todolist.txt", "a") as file:
             file.write(self.info + "\n")
             
     def ReadFile(self):
-        with open(r"C:\Users\saisa\Desktop\Coding\Course\Students\Commons\todolist.txt", "r") as file:
+        with open(r"PATH\todolist.txt", "r") as file:
             self.items = file.read().strip()
         return self.items
     
