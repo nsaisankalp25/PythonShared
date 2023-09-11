@@ -39,3 +39,24 @@ wgb9 88h4 r
 
 
 print(a)
+
+
+# -------------------------------------------------
+# simple func
+def info():
+    print(True)
+
+#info()
+
+def greet(name, time, *other):
+    print(f"Hello {name} @ time of {time}")
+    print(type(other)) # IMMUTABLE
+greet(12, 12, 12, 51,25, 1,5 ,23, 34,6, 34, 346)
+
+# Finite no of Params
+# unknown no of args 
+
+
+# ARBITRARY FUNCTIONS
+# *Args   
+# **Kwargs 
